@@ -11,7 +11,7 @@ dev:
 	go run main.go
 
 build:
-	GOARCH=amd64 GOOS=linux go build -trimpath -ldflags '-w -s' -o build/$(NAME)
+	GOARCH=armd64 GOOS=linux go build -trimpath -ldflags '-w -s' -o build/$(NAME)
 	cp config.yml build/
 
 clean:
