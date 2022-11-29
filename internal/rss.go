@@ -25,7 +25,7 @@ func init() {
 	fp.Client.Timeout = 15 * time.Second
 }
 
-// 检测rss更新的定时任务
+// 检测rss更新的定时任务，
 func CheckMessage(mm *message.Manager) {
 	checkTime := viper.GetInt64("checktime")
 	for range time.Tick(time.Duration(checkTime) * time.Minute) {
